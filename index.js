@@ -157,6 +157,9 @@ for (let i = 0; i < equiposCuartos.length; i = i + 2) {
         if (equiposCuartosFinalLocal.golesLocal < equiposCuartosFinalVisitante.golesVisitante) {
             equiposGanadoresCuartos.push(equiposCuartosFinalVisitante.equipovisitanteCuartos);
 
+        } else {
+            equiposGanadoresCuartos.push(equiposCuartosFinalLocal.equipolocalCuartos);
+
         }
     }
 }
@@ -227,6 +230,10 @@ for (let i = 0; i < equiposSemifinal.length; i = i + 2) {
             equiposGanadoresSemifinal.push(equiposCuartosFinalVisitante.equipovisitanteCuartos);
 
         }
+        else {
+            equiposGanadoresSemifinal.push(equiposCuartosFinalLocal.equipolocalCuartos);
+
+        }
     }
 }
 
@@ -294,6 +301,10 @@ for (let i = 0; i < equiposFinal.length; i = i + 2) {
         console.log(`${equiposCuartosFinalLocal.equipolocalCuartos} ${equiposCuartosFinalLocal.golesLocal} - ${equiposCuartosFinalVisitante.golesVisitante} ${equiposCuartosFinalVisitante.equipovisitanteCuartos} => ${equiposCuartosFinalVisitante.equipovisitanteCuartos}`)
         if (equiposCuartosFinalLocal.golesLocal < equiposCuartosFinalVisitante.golesVisitante) {
             equiposGanadoresFinal.push(equiposCuartosFinalVisitante.equipovisitanteCuartos);
+
+        }
+        else {
+            equiposGanadoresFinal.push(equiposCuartosFinalLocal.equipolocalCuartos);
 
         }
     }
